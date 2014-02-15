@@ -1,0 +1,10 @@
+<h1> Style Search <h1>
+	<% @users.each do |user| %>
+	<% if user.type == "Men" %>
+	<%= link_to "#{user.type}", men_men_categories_path(@categories) %>
+	  <% else %>
+	    <% if user.type == "Women" %>
+	      <%= link_to "#{user.type}", women_women_categories_path(@categories) %>
+	      <% end %>
+	    <% end %>
+	  <% end %>
