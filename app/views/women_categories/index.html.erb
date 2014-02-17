@@ -1,6 +1,15 @@
 <% @categories.each do |category| %>
   <% if category.type == "W_Formal" %>
   <%= link_to "#{category.type}", wformalitems_path %>
+  <% elsif %>
+  <% if category.type == "W_Work" %>
+  <%= link_to "#{category.type}", wworkitems_path %>
+  <% else %>
+  <% if category.type == "W_Casual" %>
+  <%= link_to "#{category.type}", wcasualitems_path %>
+  <% end %>
+  <% end %>
+  	
   <% end %>
   
     <% end %>

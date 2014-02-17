@@ -22,6 +22,8 @@ end
   end
 
   resources :wformalitems
+  resources :wworkitems
+  resources :wcasualitems
 
 
 

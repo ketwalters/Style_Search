@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140216014901) do
+ActiveRecord::Schema.define(:version => 20140217041855) do
 
   create_table "men_categories", :force => true do |t|
     t.string  "type"
@@ -20,6 +20,12 @@ ActiveRecord::Schema.define(:version => 20140216014901) do
 
   create_table "users", :force => true do |t|
     t.string   "type"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "wcasualitems", :force => true do |t|
+    t.string   "item"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -33,6 +39,12 @@ ActiveRecord::Schema.define(:version => 20140216014901) do
   create_table "women_categories", :force => true do |t|
     t.string  "type"
     t.integer "women_id"
+  end
+
+  create_table "wworkitems", :force => true do |t|
+    t.string   "item"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
