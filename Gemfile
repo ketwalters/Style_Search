@@ -8,6 +8,7 @@ gem 'rails', '3.2.16'
 gem 'sqlite3'
 gem 'debugger'
 gem 'figaro'
+gem 'httparty'
 
 
 # Gems used only for assets and not required

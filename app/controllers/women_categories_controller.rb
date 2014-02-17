@@ -17,4 +17,5 @@ class WomenCategoriesController < ActionController::Base
 		type.constantize
 	end
 
+
 end

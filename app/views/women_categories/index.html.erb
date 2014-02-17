@@ -1,3 +1,6 @@
 <% @categories.each do |category| %>
-  <%= link_to "#{category.type}" %>
+  <% if category.type == "W_Formal" %>
+  <%= link_to "#{category.type}", wformalitems_path %>
   <% end %>
+  
+    <% end %>

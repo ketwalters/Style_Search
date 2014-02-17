@@ -15,6 +15,15 @@ end
     resources :men_categories
   end
 
+  namespace "women_categories" do
+    resources :w_formal, :type => "W_Formal"
+    resources :w_work, :type => "W_Work"
+    resources :w_casual, :type => "W_Casual"
+  end
+
+  resources :wformalitems
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
