@@ -1,7 +1,7 @@
 class WformalitemsController < ActionController::Base
 
 	def index
-		@response = Api.response
+		@response = Api.new
 	end
 
 	

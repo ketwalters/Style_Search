@@ -25,6 +25,10 @@ end
   resources :wworkitems
   resources :wcasualitems
 
+  resources :mformalitems
+  resources :mworkitems
+  resources :mcasualitems
+
 
 
   # The priority is based upon order of creation:

@@ -1,4 +1,8 @@
-<p><img src=<%= @response["image"]["sizes"]["Large"]["url"] %>height="250" width="100"></p>
-<p><%= @response["name"] %></p>
-<p><%= @response["priceLabel"] %></p>
-<p><a href=<%= @response["pageUrl"] %>></p>
+<h1>Formal</h1>
+<div class=formal1>
+<p><a href=<%= @response.women_url %>><img src=<%= @response.women_formal_image %>height="250" width="100"></a></p>
+<p><%= @response.women_formal_name %><p>
+<p><%= @response.women_formal_price %></p>
+</div>
+
+

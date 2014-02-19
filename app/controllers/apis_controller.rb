@@ -1,6 +1,6 @@
 class Api < ActionController::Base
 
 	def index
-		@response = Api.response
+		@response = Api.new
 	end
 end
