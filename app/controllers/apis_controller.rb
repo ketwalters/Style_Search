@@ -1,4 +1,4 @@
-class Api < ActionController::Base
+class Api < ApplicationController
 
 	def index
 		@response = Api.new

@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem 'debugger'
 gem 'figaro'
 gem 'httparty'
+gem 'bootstrap-sass'
 
 
 # Gems used only for assets and not required

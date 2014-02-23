@@ -1,15 +1,22 @@
-<% @categories.each do |category| %>
-  <% if category.type == "W_Formal" %>
-  <%= link_to "#{category.type}", wformalitems_path %>
-  <% elsif %>
-  <% if category.type == "W_Work" %>
-  <%= link_to "#{category.type}", wworkitems_path %>
-  <% else %>
-  <% if category.type == "W_Casual" %>
-  <%= link_to "#{category.type}", wcasualitems_path %>
-  <% end %>
-  <% end %>
-  	
-  <% end %>
-  
+<h2>Choose a category</h2>
+<div class="category">
+    <% @categories.each do |category| %>
+  <div class="formal">
+    <% if category.type == "W_Formal" %>
+    <h2><%= link_to "#{category.type}", wformalitems_path %>
+  </div></h2>
+    <% elsif %>
+  <div class="work">
+    <% if category.type == "W_Work" %>
+    <h2><%= link_to "#{category.type}", wworkitems_path %>
+  </div></h2>
+    <% else %>
+  <div class="casual">
+    <% if category.type == "W_Casual" %>
+    <h2><%= link_to "#{category.type}", wcasualitems_path %>
+  </div></h2>
+</div>
     <% end %>
+  <% end %>
+<% end %>
+<% end %>

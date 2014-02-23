@@ -1,4 +1,4 @@
-class MenCategoriesController < ActionController::Base
+class MenCategoriesController < ApplicationController
 	before_filter :set_type
 
 	def index

@@ -1,0 +1,45 @@
+body {
+	background-color: black;
+}
+
+h2 {
+	font-size: 40px;
+	color: white;
+	font-family: 'Over the Rainbow';
+	text-align: center;
+}
+
+.category {
+	margin: 20px;
+	text-align: center;
+	padding-bottom: 60px;
+	padding-top: 140px;
+	padding-left: 85px;
+}
+
+.casual {
+	float: left;
+	margin-left: center;
+}
+
+.formal {
+	float: left;
+	margin-left: 45px;
+
+}
+
+.work {
+	float: left;
+	margin-left: 45px;
+
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-shadow: 0px 0px 10px #FF33FF;
+	color: transparent; 
+}

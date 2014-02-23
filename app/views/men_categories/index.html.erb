@@ -1,15 +1,23 @@
+<div class="category">
 <% @categories.each do |category| %>
+<div class="formal">
   <% if category.type == "M_Formal" %>
-  <%= link_to "#{category.type}", mformalitems_path %>
+  <h2><%= link_to "#{category.type}", mformalitems_path %></h2>
+</div>
   <% elsif %>
+  <div class="work">
   <% if category.type == "M_Work" %>
-  <%= link_to "#{category.type}", mworkitems_path %>
+  <h2><%= link_to "#{category.type}", mworkitems_path %></h2>
+</div>
   <% else %>
+  <div class="casual">
   <% if category.type == "M_Casual" %>
-  <%= link_to "#{category.type}", mcasualitems_path %>
+  <h2><%= link_to "#{category.type}", mcasualitems_path %></h2>
+</div>
   <% end %>
   <% end %>
   	
   <% end %>
   
     <% end %>
+</div>    

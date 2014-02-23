@@ -3,9 +3,8 @@ require 'httparty'
 class Api
 	include HTTParty
 
-	def initialize
-		api_key = ENV['SECRET_TOKEN']
-		api_url = "http://api.shopstyle.com/api/v2/products/435600240?pid=#{api_key}"
+	def initialize(api_url)
+		@api_key = ENV['SECRET_TOKEN']
 		@response = HTTParty.get(api_url)
 	end
 
@@ -24,6 +23,11 @@ class Api
 	def women_url
 		@response["pageUrl"]
 	end
+
+	def formal_image_medium
+		@response["image"]["sizes"]["Medium"]["url"]
+	end
+
 end
 
 

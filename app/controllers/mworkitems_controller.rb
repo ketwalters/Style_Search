@@ -1,4 +1,4 @@
-class MworkitemsController < ActionController::Base
+class MworkitemsController < ApplicationController
 
 	def index
 	end

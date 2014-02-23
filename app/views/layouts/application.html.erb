@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>StyleSearch3</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <title>Style Search</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Over the Rainbow">
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag params[:controller] %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <%= yield %>
 </body>
 </html>

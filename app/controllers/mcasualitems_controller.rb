@@ -1,4 +1,4 @@
-class McasualitemsController < ActionController::Base
+class McasualitemsController < ApplicationController
 
 	def index
 	end

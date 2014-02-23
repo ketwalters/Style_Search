@@ -60,5 +60,6 @@ module StyleSearch3
     config.assets.version = '1.0'
 
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+    config.assets.precompile << "*.css"
   end
 end

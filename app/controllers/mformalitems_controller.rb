@@ -1,4 +1,4 @@
-class MformalitemsController < ActionController::Base
+class MformalitemsController < ApplicationController
 
 	def index
 	end

@@ -1,4 +1,4 @@
-class WcasualitemsController < ActionController::Base
+class WcasualitemsController < ApplicationController
 
 	def index
 	end
