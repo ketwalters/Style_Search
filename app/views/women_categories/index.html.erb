@@ -1,22 +1,77 @@
-<h2>Choose a category</h2>
-<div class="category">
-    <% @categories.each do |category| %>
+<h2>Choose a category or color</h2>
+
+<div class="category"> 
+<% @categories.each do |category| %>
   <div class="formal">
-    <% if category.type == "W_Formal" %>
-    <h2><%= link_to "#{category.type}", wformalitems_path %>
-  </div></h2>
-    <% elsif %>
+  <% if category.type == "W_Formal" %>
+    
+      <h2><%= link_to "#{category.type}", wformalitems_path %></h2>
+
+      <%= link_to red_path do %>
+      <div class="redoval"></div>
+      <% end %>
+      
+      <%= link_to green_path do %>
+      <div class="greenoval"></div>
+      <% end %>
+    
+      <%= link_to purple_path do %>
+      <div class="purpleoval"></div>
+      <% end %>
+      
+  </div>
+      
+  <% elsif %>
+  
   <div class="work">
+    
     <% if category.type == "W_Work" %>
-    <h2><%= link_to "#{category.type}", wworkitems_path %>
-  </div></h2>
-    <% else %>
-  <div class="casual">
-    <% if category.type == "W_Casual" %>
-    <h2><%= link_to "#{category.type}", wcasualitems_path %>
-  </div></h2>
-</div>
+    
+      <h2><%= link_to "#{category.type}", wworkitems_path %></h2>
+
+      <%= link_to red_work_path do %>
+      <div class="redoval"></div>
+      <% end %>
+
+      <%= link_to green_work_path do %>
+      <div class="greenoval"></div>
+      <% end %>
+
+      <%= link_to purple_work_path do %>
+      <div class="purpleoval"></div>
+      <% end %>
+
     <% end %>
-  <% end %>
+  
+  </div>
+
+  
+  <div class="casual">
+    
+    <% if category.type == "W_Casual" %>
+        
+        <h2><%= link_to "#{category.type}", wcasualitems_path %></h2>
+
+        <%= link_to red_casual_path do %>
+        <div class="redoval"></div>
+        <% end %>
+      
+        <%= link_to green_casual_path do %>
+        <div class="greenoval"></div>
+        <% end %>
+      
+        <%= link_to purple_casual_path do %>
+        <div class="purpleoval"></div>
+        <% end %>
+
+    <% end %>
+  
+  </div>
+      
 <% end %>
+
+
 <% end %>
+</div>
+
+  

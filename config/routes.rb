@@ -29,6 +29,35 @@ end
   resources :mworkitems
   resources :mcasualitems
 
+  match '/page2' => 'wformalitems#page2'
+  match '/page3' => 'wformalitems#page3'
+  match '/page4' => 'wformalitems#page4'
+
+  match '/red' => 'colors#red'
+  match '/green' => 'colors#green'
+  match '/purple' => 'colors#purple'
+
+  match '/red_work' => 'colors#red_work'
+  match '/green_work' => 'colors#green_work'
+  match '/purple_work' => 'colors#purple_work'
+
+  match '/red_casual' => 'colors#red_casual'
+  match '/green_casual' => 'colors#green_casual'
+  match '/purple_casual' => 'colors#purple_casual'
+
+  match '/mred' => 'colors#mred'
+  match '/mgreen' => 'colors#mgreen'
+  match '/mpurple' => 'colors#mpurple'
+
+  match '/mred_work' => 'colors#mred_work'
+  match '/mgreen_work' => 'colors#mgreen_work'
+  match '/mpurple_work' => 'colors#mpurple_work'
+
+  match '/mred_casual' => 'colors#mred_casual'
+  match '/mgreen_casual' => 'colors#mgreen_casual'
+  match '/mpurple_casual' => 'colors#mpurple_casual'
+  
+
 
 
 
