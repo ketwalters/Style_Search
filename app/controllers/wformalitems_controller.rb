@@ -8,6 +8,12 @@ class WformalitemsController < ApplicationController
     @ear = Api.new("http://api.shopstyle.com/api/v2/products/299061489?pid=#{api_key}")
     end
 
+def create
+  debugger
+  puts 'hi'
+  # save to database code
+end
+
   def page2
     api_key = ENV['SECRET_TOKEN']
     @dress1 = Api.new("http://api.shopstyle.com/api/v2/products/402825252?pid=#{api_key}")

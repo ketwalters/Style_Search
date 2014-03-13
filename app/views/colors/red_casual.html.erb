@@ -1,1 +1,17 @@
 <%= render "redpar" %>
+<br>
+</br>
+</br>
+<div class="container">
+  <div class="shirt">
+    <p><a href=<%= @shirt.women_url %>><img src=<%= @shirt.women_formal_image %> id="1" height="250" width="100"></a></p>
+    <p><%= @shirt.women_formal_name %><p>
+    <p><%= @shirt.women_formal_price %></p>
+  </div>
+
+  <div class="jeans">
+  	<p><a href=<%= @jeans.women_url %>><img src=<%= @jeans.women_formal_image %>height="250" width="100"></a></p>
+    <p><%= @jeans.women_formal_name %></p>
+    <p><%= @jeans.women_formal_price %></p>
+  </div>
+</div>

@@ -11,6 +11,7 @@ gem 'figaro'
 gem 'httparty'
 gem 'bootstrap-sass'
 gem "paperclip", "~> 4.1"
+gem "jquery-rails"
 
 
 # Gems used only for assets and not required

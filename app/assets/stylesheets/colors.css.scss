@@ -2,14 +2,14 @@ body {
 	background-color: white;
 }
 
-.blackoval {
+.goldoval {
      width:180px; 
      height:30px; 
      border:1px solid #000; 
      border-radius: 90px;
-     background: black;
+     background: #EDDA74;
      display: inline-block;
-     margin-left: 610px;
+     margin-left: 650px;
 }
 
 .purpleoval {
@@ -39,7 +39,7 @@ body {
      border-radius: 90px;
      background: yellow;
      display: inline-block;
-     margin-left: 610px;
+     margin-left: 650px;
 }
 
 .whiteoval {
@@ -69,7 +69,7 @@ body {
      border-radius: 90px;
      background: pink;
      display: inline-block;
-     margin-left: 680px;
+     margin-left: 750px;
 }
 
 .whiteoval2 {
@@ -80,4 +80,33 @@ body {
      background: white;
      display: inline-block;
      margin-left: 20px;
+}
+
+body {
+     background-color: white;
+}
+
+h3 {
+     color: black;
+     font-family: 'Megrim';
+     display: inline-block;
+     margin-left: 1100px;
+}
+
+p {
+     color: black;
+     font-family: 'Megrim';
+     text-align: center
+}
+
+a {
+     text-decoration: none;
+     color: black;
+}
+
+h1 {
+     font-size: 60px;
+     text-align: center;
+     color: black;
+     font-family: 'Megrim';
 }
