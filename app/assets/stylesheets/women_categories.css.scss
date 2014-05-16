@@ -1,17 +1,37 @@
+* {
+  box-sizing: border-box; 
+}
+
 body {
 	background-color: white;
 }
 
 h2 {
-	font-size: 40px;
+	font-size: 40px;;
 	color: black;
 	font-family: 'Megrim';
 	text-align: center;
+	-webkit-animation:slidein 3s; /* Chrome, Safari, Opera */
+    animation-name: slidein;
 }
 
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
 .category {
-	padding-top: 120px;
-	padding-left: 290px;
+	padding-top: 10%;
+	padding-left: 0%;
 }
 
 .casual {
