@@ -57,34 +57,54 @@ h2 {
 }
 
 .redoval {
-     width:180px; 
-     height:30px; 
-     border:1px solid #000; 
-     border-radius: 90px;
-     background: #DC143C;
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, red 0%, orange 100%, red 95%);
+     background-image: -webkit-radial-gradient(45px 45px, circle cover, red, red);
+     background-image: radial-gradient(45px 45px 45deg, circle cover, red 0%, orange 100%, red 95%);
+     animation-name: spin; 
+     animation-duration: 3s; /* 3 seconds */
+     animation-iteration-count: infinite; 
+     animation-timing-function: linear;
 }
 
 .greenoval {
-     width:180px; 
-     height:30px; 
-     border:1px solid #000; 
-     border-radius: 90px;
-     background: #2E8B57;
-     margin-top: 2px;
+    margin-left: 50%;
+    margin-bottom: 20%;
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, green 0%, orange 100%, red 95%);
+     background-image: -webkit-radial-gradient(45px 45px, circle cover, green, green);
+     background-image: radial-gradient(45px 45px 45deg, circle cover, green 0%, orange 100%, green 95%);
+     animation-name: spin; 
+     animation-duration: 3s; /* 3 seconds */
+     animation-iteration-count: infinite; 
+     animation-timing-function: linear;
 }
 
 .purpleoval {
-     width:180px; 
-     height:30px; 
-     border:1px solid #000; 
-     border-radius: 90px;
-     background: #BA55D3;
-     margin-top: 2px;
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, purple 0%, orange 100%, purple 95%);
+     background-image: -webkit-radial-gradient(45px 45px, circle cover, purple, purple);
+     background-image: radial-gradient(45px 45px 45deg, circle cover, purple 0%, orange 100%, purple 95%);
+     animation-name: spin; 
+     animation-duration: 3s; /* 3 seconds */
+     animation-iteration-count: infinite; 
+     animation-timing-function: linear;
 }
 
 .all {
 	padding-top: 100px;
 	padding-left: 300px;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
 }
 
 
