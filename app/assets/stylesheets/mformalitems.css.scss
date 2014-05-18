@@ -26,3 +26,21 @@ h1 {
 	color: black;
 	font-family: 'Megrim';
 }
+
+.suit {
+	display: inline-block;
+	margin-left: 30px;
+
+}
+
+.shoe {
+	display: inline-block;
+	margin-left: 50px;
+}
+
+.container {
+	width: 1000px;
+	max-width: 90%;
+	position: relative;
+	margin: 0 auto;
+}
