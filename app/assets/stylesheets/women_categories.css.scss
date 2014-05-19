@@ -11,7 +11,7 @@ h2 {
 	color: black;
 	font-family: 'Megrim';
 	text-align: center;
-	-webkit-animation:slidein 3s; /* Chrome, Safari, Opera */
+	-webkit-animation:slidein 2s; /* Chrome, Safari, Opera */
     animation-name: slidein;
 }
 
@@ -57,7 +57,9 @@ h2 {
 }
 
 .redoval {
+     display: inline-block;
      border-radius: 50%;
+     margin-left: 10px;
      width: 50px;
      height: 50px;
      background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, red 0%, orange 100%, red 95%);
@@ -70,8 +72,7 @@ h2 {
 }
 
 .greenoval {
-    margin-left: 50%;
-    margin-bottom: 20%;
+     display: inline-block;
      border-radius: 50%;
      width: 50px;
      height: 50px;
@@ -85,6 +86,7 @@ h2 {
 }
 
 .purpleoval {
+     display: inline-block;
      border-radius: 50%;
      width: 50px;
      height: 50px;
