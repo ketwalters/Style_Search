@@ -10,7 +10,7 @@ gem 'pg'
 gem 'figaro'
 gem 'httparty'
 gem 'bootstrap-sass'
-#gem "jquery-rails"
+gem "jquery-rails"
 
 
 # Gems used only for assets and not required
