@@ -6,7 +6,7 @@ gem 'rails', '3.2.16'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-gem 'debugger'
+#gem 'debugger'
 gem 'figaro'
 gem 'httparty'
 gem 'bootstrap-sass'
