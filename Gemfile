@@ -11,6 +11,7 @@ gem 'figaro'
 gem 'httparty'
 gem 'bootstrap-sass'
 gem "jquery-rails"
+gem 'sqlite3'
 
 
 # Gems used only for assets and not required
