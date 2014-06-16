@@ -9,9 +9,8 @@ class WformalitemsController < ApplicationController
     end
 
 def create
-  debugger
-  puts 'hi'
-  # save to database code
+  @formal_images = Wformalitem.new
+  @formal_images.save_urls
 end
 
   def page2
