@@ -56,7 +56,10 @@ class ColorsController < ApplicationController
 	end
 
 	def mred
-		@red = "hello"
+		api_key = ENV['SECRET_TOKEN']
+		@shirt = Api.new("http://api.shopstyle.com/api/v2/products/453624160?pid=#{api_key}")
+		@pants = Api.new("http://api.shopstyle.com/api/v2/products/453486615?pid=#{api_key}")
+		@shoe = Api.new("http://api.shopstyle.com/api/v2/products/453550192?pid=#{api_key}")
 	end
 
 	def mgreen
@@ -68,7 +71,10 @@ class ColorsController < ApplicationController
 	end
 
 	def mred_work
-		@red_work = "red work"
+		api_key = ENV['SECRET_TOKEN']
+		@shirt = Api.new("http://api.shopstyle.com/api/v2/products/453624160?pid=#{api_key}")
+		@pants = Api.new("http://api.shopstyle.com/api/v2/products/453486615?pid=#{api_key}")
+		@shoe = Api.new("http://api.shopstyle.com/api/v2/products/453550192?pid=#{api_key}")
 	end
 
 	def mgreen_work
