@@ -7,7 +7,7 @@ StyleSearch3::Application.routes.draw do
   resources :women, :type => "Women"
 end
 
-  root :to => "users#home"
+  root :to => "users#index"
 
   namespace "women" do
     resources :women_categories
