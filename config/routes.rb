@@ -1,7 +1,6 @@
 StyleSearch3::Application.routes.draw do
 
-  root :to => "users#index"
-  root :to =>"users#set_type"
+  root :to => "users#set_type"
 
   resources :users 
 
