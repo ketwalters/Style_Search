@@ -1,6 +1,9 @@
 class UsersController < ApplicationController
 	before_filter :set_type
 
+	def home
+	end
+
 	def index
 		@users = type_class.all
 	end
