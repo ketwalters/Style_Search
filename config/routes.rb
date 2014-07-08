@@ -1,13 +1,14 @@
 StyleSearch3::Application.routes.draw do
 
+  root :to => "users#index"
+  root :to =>"users#set_type"
+
   resources :users 
 
   namespace "users" do
   resources :men, :type => "Men"
   resources :women, :type => "Women"
 end
-
-  root :to => "users#index"
 
   namespace "women" do
     resources :women_categories
