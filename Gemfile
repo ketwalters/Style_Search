@@ -9,7 +9,7 @@ gem 'pg'
 #gem 'debugger'
 gem 'figaro'
 gem 'httparty'
-gem 'bootstrap-sass'
+#gem 'bootstrap-sass'
 gem "jquery-rails"
 
 group :development, :test do
