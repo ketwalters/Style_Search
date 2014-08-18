@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140622002850) do
+ActiveRecord::Schema.define(:version => 20140817020430) do
 
   create_table "filters", :force => true do |t|
     t.string   "url"
@@ -22,6 +22,13 @@ ActiveRecord::Schema.define(:version => 20140622002850) do
   create_table "men_categories", :force => true do |t|
     t.string  "type"
     t.integer "men_id"
+  end
+
+  create_table "pairs", :force => true do |t|
+    t.string   "val1"
+    t.string   "val2"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|

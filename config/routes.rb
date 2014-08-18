@@ -2,6 +2,10 @@ StyleSearch3::Application.routes.draw do
 
   #root :to => "users#index"
 
+  resources :pairs do 
+    post :recommend, on: :collection
+  end
+
   resources :users 
 
   root :to => "users#index" do

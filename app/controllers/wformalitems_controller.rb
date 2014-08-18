@@ -9,9 +9,10 @@ class WformalitemsController < ApplicationController
     end
 
     def create
-      @formal_images = Filter.new(params[:url])
-      @formal_images.save
+      @formal_image = Filter.new(params[:filter])
+      @formal_image.save
     end
+
 
     def page2
       api_key = ENV['SECRET_TOKEN']

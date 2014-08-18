@@ -1,29 +1,76 @@
-<script type="text/javascript">
-  
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+$("#1").on("click", function(){
+  $.ajax({
+    type: "POST",
+    url: "/wformalitems",
+    data: { filter : { url : $(".item").attr("href") } }
+   })  
+    .done(function(msg){
+      alert("Data Saved:" + msg);
+    });
+});
+
+$("#2").on("click", function(){
+  $.ajax({
+    type: "POST",
+    url: "/wformalitems",
+    data: { filter : { url : $(".item").attr("href") } }
+   })  
+    .done(function(msg){
+      alert("Data Saved:" + msg);
+    });
+});
+
+$("#3").on("click", function(){
+  $.ajax({
+    type: "POST",
+    url: "/wformalitems",
+    data: { filter : { url : $(".item").attr("href") } }
+   })  
+    .done(function(msg){
+      alert("Data Saved:" + msg);
+    });
+});
+
+$("#4").on("click", function(){
+  $.ajax({
+    type: "POST",
+    url: "/wformalitems",
+    data: { filter : { url : $(".item").attr("href") } }
+   })  
+    .done(function(msg){
+      alert("Data Saved:" + msg);
+    });
+});
+
+ $(".item", ".item").on("click", function(){
+  var id = $(this).attr("id");
+  $.ajax("/pairs/recommend")
+});
 </script>
 
 <h1>Formal</h1>
 <div class="container">
   <div class="dress">
-    <p><a href=<%= @dress.women_url %>><img src=<%= @dress.women_formal_image %> id="1" height="250" width="100"></a></p>
+    <p><a class="item" href=<%= @dress.women_url %>><img src=<%= @dress.women_formal_image %> id="1" height="250" width="100"></a></p>
     <p><%= @dress.women_formal_name %><p>
     <p><%= @dress.women_formal_price %></p>
   </div>
 
   <div class="shoe">
-  	<p><a href=<%= @shoe.women_url %>><img src=<%= @shoe.women_formal_image %>height="250" width="100"></a></p>
+  	<p><a class="item" href=<%= @shoe.women_url %>><img src=<%= @shoe.women_formal_image %> id="2" height="250" width="100"></a></p>
     <p><%= @shoe.women_formal_name %></p>
     <p><%= @shoe.women_formal_price %></p>
   </div>
  
  <div class="lip">
- 	<p><a href=<%= @lip.women_url %>><img src=<%= @lip.women_formal_image %>height="250" width="100"></a></p>
+ 	<p><a class="item" href=<%= @lip.women_url %>><img src=<%= @lip.women_formal_image %> id="3" height="250" width="100"></a></p>
  	<p><%= @lip.women_formal_name %></p>
  	<p><%= @lip.women_formal_price %></p>
  </div>
  
  <div class="ear">
- 	<p><a href=<%= @ear.women_url %>><img src=<%= @ear.women_formal_image %>height="250" width="100"></a></p>
+ 	<p><a class="item" href=<%= @ear.women_url %>><img src=<%= @ear.women_formal_image %> id="4" height="250" width="100"></a></p>
  	<p><%= @ear.women_formal_name %></p>
  	<p><%= @ear.women_formal_price %></p>
 </div>
